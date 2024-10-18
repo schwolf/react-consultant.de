@@ -1,5 +1,7 @@
 # react-consultant.de
 
+`npx tailwindcss -i ./src/input.css -o ./src/output.css --watch` creates necessary css classes
+
 TODOs
   * favicon
   * impressung und datenschutz
