@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 16px;
-  @screen sm {
+@layer base {
+  html {
     font-size: 16px;
-  }
-  @screen md {
-    font-size: 15px;
-  }
-  @screen lg {
-    font-size: 18px;
-  }
-  @screen xl {
-    font-size: 21px;
-  }
-  @screen 2xl {
-    font-size: 24px;
+    @screen sm {
+      font-size: 16px;
+    }
+    @screen md {
+      font-size: 15px;
+    }
+    @screen lg {
+      font-size: 18px;
+    }
+    @screen xl {
+      font-size: 21px;
+    }
+    @screen 2xl {
+      font-size: 24px;
+    }
   }
 }

@@ -12,6 +12,7 @@
     "tailwindcss": "^3.4.14"
   },
   "dependencies": {
-    "curvetext": "^1.0.4"
+    "curvetext": "^1.0.4",
+    "http-server": "^14.1.1"
   }
 }
