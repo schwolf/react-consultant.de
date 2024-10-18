@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>React Consultant</title>
+  <link href="./output.css" rel="stylesheet">
+
+  <!-- TODOs
+  * favicon
+  * impressung und datenschutz
+  * apple-touch-icon ?
+  * profil-pdf
+  * curved text funktion rausschmeissen
+  * gatsby
+  * => github
+  * meta tags
+
+
+
+  Referenzen:
+  https://www.reactjsconsulting.com/
+  https://react-consulting.de/
+  http://momentum-template.webflow.io
+  https://incredible-template.webflow.io/
+
+
+  
+  -->
+
+  <!-- <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+  <!-- <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" /> -->
+  <!-- <script type="text/javascript">
+    const curveText = (option) => {
+      const styles = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        width: '15px',
+      }
+
+      let initialAngle = -90;
+      const degToRad = (iangle) => {
+        return iangle * (Math.PI / 180)
+      };
+
+      const diameter = option.radius * 2;
+
+      option.element.style.position = 'relative'
+      option.element.style.transform = 'rotate(-90deg)'
+      option.element.style.width = `${diameter}px`;
+      option.element.style.height = `${diameter}px`;
+
+      const text = option.element.innerText;
+      const chars = text.split('')
+      option.element.innerText = null;
+
+      let deltaAngle
+
+      if (option.angle) {
+        deltaAngle = option.angle / chars.length;
+      } else {
+        deltaAngle = 360 / chars.length;
+      }
+
+      chars.forEach((char, index) => {
+        const charElement = document.createElement('span')
+        charElement.innerText = char;
+        Object.assign(charElement.style, styles)
+
+        const xPos = option.radius * Math.cos(degToRad(initialAngle));
+        const yPos = option.radius * Math.sin(degToRad(initialAngle));
+
+        const tranlate = `translate(${xPos}px, ${yPos}px)`;
+        const rotate = `rotate(${index * deltaAngle}deg)`;
+
+        charElement.style.transform = `${tranlate} ${rotate}`
+
+        initialAngle += deltaAngle;
+        option.element.appendChild(charElement);
+      })
+    }
+
+    // Add your code here
+    window.setTimeout(() => {
+      const circularText = document.getElementById('circular-text');
+      console.log(circularText);
+
+      curveText({
+        element: circularText,
+        radius: 112,
+        angle: 190
+      });
+    }, 1000);
+  </script>-->
+</head>
+
+<body>
+  <main class="flex flex-col">
+    <section
+      class="bg-gradient-to-br from-blue-200 via-blue-950 via-70% to-blue-900 text-slate-100 pt-4 pb-16 px-4 md:px-20 lg:px-40 xl:px-60 2xl:px-80">
+      <nav class="pb-6">
+        <ul class="flex gap-4 justify-end">
+          <li class="border-b-4 border-b-pink-500 cursor-pointer">Home</li>
+          <li><a href="#services">Leistungen</a></li>
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex flex-col items-center gap-12 md:gap-0">
+        <div class="flex flex-col md:flex-row-reverse items-center">
+
+          <img src="./img/smartphone.png" alt="react source code" class="w-48 md:w-full" />
+
+          <!--<div class="relative">
+          <div id="circular-text" class="font-extrabold text-2xl">react-consultant.de</div>
+          <div class="absolute top-[8px] left-[32px]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348"
+              class="fill-white stroke-white stroke-width stroke-1 size-48">
+              <circle cx="0" cy="0" r="2.05" />
+              <g fill="none">
+                <ellipse rx="11" ry="4.2" />
+                <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+              </g>
+            </svg>
+          </div>
+        </div>-->
+          <div class="flex flex-col gap-4">
+            <span class="text-2xl font-light">
+              Lass Dir bei Deinem React Projekt helfen - und
+              profitiere von meiner Erfahrung!
+            </span>
+            <a href="#services">
+              <button class="bg-pink-500 p-4 rounded-sm">
+                Jetzt informieren
+              </button>
+            </a>
+          </div>
+        </div>
+        <img src="./img/logo.gif" alt="logo" class="size-32" />
+      </div>
+
+      <!-- <h1 class="text-3xl font-medium pb-6">
+        <div id="circular-text">&nbsp;react-consultant.de</div>
+        <img src="./react-logo.png" alt="React logo" class="inline size-10" />react-consultant.de
+      </h1>-->
+
+    </section>
+
+    <a name="services"></a>
+    <section class="bg-black text-slate-100 py-16 flex flex-col items-center px-4 md:px-20 lg:px-40 xl:px-60 2xl:px-80">
+      <h1 class="text-2xl font-semibold pb-8">LEISTUNGEN</h1>
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col items-center">
+          <img src="./img/group.svg" alt="group" class="size-24" />
+          <h2 class="text-xl font-semibold pb-2">PROJEKTBEGLEITUNG</h2>
+          <div class="text-center">
+            Du bist auf der Suche nach einem erfahrenen Software Engineer, der als integraler
+            Bestandteil Deines Teams hilft Dein React Projekt voranzubringen?<br />
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./img/tool.svg" alt="tool" class="size-24" />
+          <h2 class="text-xl font-semibold pb-2">VOR-ORT WORKSHOPS</h2>
+          <div class="text-center">
+            Dein Team benötigt ein maßgeschneidertes Training zu Themen rund um dem React?
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./img/checklist.svg" alt="checklist" class="size-24" />
+          <h2 class="text-xl font-semibold pb-2">ARCHITEKTURBERATUNG</h2>
+          <div class="text-center">
+            Du möchtest sicherstellen, dass Dein React Projekt von Anfang an auf einem soliden Fundament steht?
+            Oder bist interessiert an einer zweiten Meinung zu Deiner bestehenden Architektur?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a name="about"></a>
+    <section class="bg-white flex flex-col items-center py-16 px-4 md:px-20 lg:px-40 xl:px-60 2xl:px-80">
+      <h1 class="text-2xl font-semibold pb-8">WER STECKT DAHINTER?</h1>
+      <img src="./img/wolfgang.png" alt="Foto von Wolfgang Schmidt" class="rounded-full size-44" />
+      <div class="italic mt-4">
+        "Hallo, mein Name ist Wolfgang Schmidt.<br />
+        Als freiberuflicher Software Engineer helfe ich Firmen seit über 20 Jahren wartbare und erweiterbare
+        Softwarelösungen zu entwickeln.<br />
+        Nachdem ich in den ersten Jahren meines Berufslebens hauptsächlich im Microsoft Umfeld (.NET / C#) unterwegs war
+        habe
+        ich mich seit 2015 auf React (und natürlich JavaScript und TypeScript) spezialisiert. Seitdem war ich an vielen
+        React Projekten beteiligt und habe Teams bei der Einführung unterstützt."
+      </div>
+    </section>
+
+    <a name="contact"></a>
+    <section
+      class="bg-gradient-to-br from-blue-200 via-blue-950 via-70% to-blue-900 text-slate-100 min-h-screen py-16 flex flex-col items-center px-4 md:px-20 lg:px-40 xl:px-60 2xl:px-80">
+      <h1 class="text-2xl font-semibold pb-8">KONTAKT</h1>
+      <div class="text-2xl font-light pb-6">
+        Du bist neugierig geworden und kannst Dir eine Zusammenarbeit vorstellen? Oder hast noch Fragen?
+      </div>
+
+      <a href="mailto:schmidt@epsit.de?subject=Anfrage%20über%20react-consultant.de">
+        <button class="bg-pink-500 p-4 rounded-sm">
+          Email an Wolfgang
+        </button>
+      </a>
+
+      <img src="./img/logo.gif" alt="logo" class="size-32 mt-12" />
+
+      <ul class="mt-4 flex gap-4">
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+
+</html>
