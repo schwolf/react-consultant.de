@@ -13,6 +13,7 @@ TODOs
   * meta tags
   * lighthouse check
   * email anpassen
+  * ssl
 
   UI Ideas from:
   http://momentum-template.webflow.io
