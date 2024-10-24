@@ -11,14 +11,14 @@ TODOs
   * favicon
   * profil-pdf
   * curved text funktion rausschmeissen
-  * gatsby
-  * lighthouse check
+  * Icons
   * email anpassen
   * Promo (Twitter, blogspot...)
   * alt tags
   * Accessibility
   * Werbung?
-  * Mittelfranken noch mit einbringen
+
+
 
 https://www.seobility.net/de/rankingcheck/
 
